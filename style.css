@@ -1,4 +1,41 @@
-body{
+*
+{
+    margin-top: 20px;
+}
+body
+{
     background-color: black;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.text
+{
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input
+{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+
+}
+button
+{
+    background-color: #6d6d6d;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    transition-duration: 0.5s;
+    color: white;
+}
+button:hover
+{
+    background-color: rgb(107, 150, 175);
+    transition-duration: 0.5s;
+    color: rgb(0, 0, 0);
 }
