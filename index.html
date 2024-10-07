@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tapuru Cursos</title>
+    <title>teste</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<header>
-    <h1 id="titulo">Calculadora de Soma!</h1>
-</header>
-
 <body>
+    <h1 class="text">Pense em um número</h1>
+    <input type="number" id="numero" placeholder="Insira o número">
+    <button id="botao">Leia minha mente</button>
+    <h2></h2>
 
-    <form>
-        <label for="nome">Primeiro Num.</label><br><br>
-        <input type="number" id="nome" name="nome" placeholder="Insira um Número"><br><br>
-        <label for="altura">Segundo Num.:</label><br><br>
-        <input type="number" id="altura" name="altura" placeholder="Insira outro Número"><br><br>
-        <button id="btnConfirmar">Confirmar</button>
-    </form>
+    <script>
+        const inputNumber = document.querySelector('input[type="number"]');
+        const button = document.querySelector ('button');
 
-    <dialog id="dialog">
-        <p id="nome-dialog"></p>
-        <img src="image.png" alt="xd">
-        <button id="btnFechar">Fechar</button>
-    </dialog>
-    
-      <script src="script.js"></script>
+        button.addEventListener('click', () => {
 
+        const numero = inputNumber.value;
+            if(numero !== null && numero !== ""){
+                alert("O número que você pensou é: " + numero)
+            }
+            else{
+                alert("Nada não é um número!")
+            }
+        });
+    </script>
 </body>
 </html>
